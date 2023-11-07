@@ -1,7 +1,44 @@
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Inter, Roboto_Mono } from 'next/font/google'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+const roboto_mono = Roboto_Mono({
+  subsets: ['latin'],
+  variable: '--font-roboto-mono',
+  display: 'swap',
+})
+
+
+const agrandir = localFont({
+  src: './fonts/Agrandir-Regular.otf',
+  variable: '--font-agrandir',
+  display: 'swap',
+})
+
+const agrandirWide = localFont({
+  src: './fonts/Agrandir-WideLight.otf',
+  variable: '--font-agrandir-wide',
+  display: 'swap',
+})
+
+const agrandirGrandLight = localFont({
+  src: './fonts/Agrandir-GrandLight.otf',
+  variable: '--font-agrandir-grand-light',
+  display: 'swap',
+})
+
+const agrandirGrandHeavy = localFont({
+  src: './fonts/Agrandir-GrandHeavy.otf',
+  variable: '--font-agrandir-grand-bold',
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +47,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${inter.variable} ${roboto_mono.variable} ${agrandir.variable} ${agrandirWide.variable} ${agrandirGrandLight.variable} ${agrandirGrandHeavy.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }
+
+
+ 
