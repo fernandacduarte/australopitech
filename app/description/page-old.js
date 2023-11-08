@@ -73,18 +73,32 @@ export const Description = () => {
 
   return (
     <div className={styles.descriptionContainer}>
-      <div className={styles.descriptionBoxBorder}>
-        <div className={styles.descriptionText}>
-          We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
-        </div>
-      </div>
-      {/*<div className={styles.descriptionBox}>
-         <DescriptionBoxBorderDesktop />
-        <DescriptionBoxBorderMobile />
+      {/* <DescriptionBoxDesktop>
         <div className={styles.descriptionTextContainer}>
-          We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
-        </div> 
-      </div>*/}
+          <div className={styles.descriptionText}>
+            We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
+          </div>
+        </div>
+      </DescriptionBoxDesktop> */}
+      <div className={styles.descriptionBox}>
+        { isMobile ? (
+            <DescriptionBoxBorderMobile>
+              <div className={styles.descriptionTextContainerMobile}>
+                <div>
+                  We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
+                </div>
+              </div>
+            </DescriptionBoxBorderMobile>
+          ) : (
+            <>
+              <DescriptionBoxBorderDesktop />
+              <div className={styles.descriptionTextContainer}>
+                We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
+              </div>
+            </>
+          )
+        }
+      </div>
 
       
 
