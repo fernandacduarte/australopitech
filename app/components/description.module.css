@@ -1,0 +1,102 @@
+.descriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: clamp(3.375rem, 0.4412rem + 6.1765vw, 6rem);
+}
+
+.introductionContainer {
+  width: 100%;
+  height: auto; 
+
+  margin-top: clamp(3.375rem, 0.4412rem + 6.1765vw, 6rem);
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+  /* padding: 0 clamp(2.25rem, 1.1786rem + 5.3571vw, 6rem); */
+  /* padding: 0 clamp(1.125rem, -0.2679rem + 6.9643vw, 6rem); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introductionBoxBorder {
+  width: 100%;
+  height: auto;
+
+  /* padding: 100px 50px; */
+  padding: clamp(2.25rem, 1.1786rem + 5.3571vw, 6rem) clamp(1.6875rem, 0.8839rem + 4.0179vw, 4.5rem);
+
+  background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(to bottom, #2FC2C5, #905F9B) border-box;
+  border: 5px solid transparent;
+  border-radius: 25px;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introductionText {
+  width: auto;
+  /* font-size: clamp(1.5rem, 0.3125rem + 2.5vw, 3rem); */
+  font-size: 48px;
+  color: #cbcbcb;
+  font-family: var(--font-agrandir);
+  text-align: center;
+  
+
+  /* @media (max-width: 1124px) {
+    text-align: left;
+  } */
+
+  @media (max-width: 1059px) {
+    /* text-align: left; */
+    /* font-size: 36px; */
+    font-size: clamp(1.125rem, 0.6379rem + 2.4357vw, 2.25rem);
+  }
+
+  @media (max-width: 501px) {
+    text-align: left;
+  }
+
+  /* @media (max-width: 563px) {
+    text-align: left;
+    font-size: 24px;
+  } */
+}
+
+.solutionsContainer {
+  width: 100%;
+  height: auto;
+  background-color: red;;
+}
+
+.solutionsTitle {
+  font-family: var(--font-agrandir-grand-bold);
+  color: #969696;
+  font-size: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
+}
+
+.solutionsCardGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* @media (max-width: 1023px) {
+    justify-content: center;
+  } */
+}
+
+.solutionsCard {
+  width: 292px;
+  height: 267px;
+  background-color: blue;
+}
+
+.catchyPhrase {
+  width: 100%;
+  height: 275px;
+  background-color: pink;;
+}

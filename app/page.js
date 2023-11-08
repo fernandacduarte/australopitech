@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import { Navbar } from './navbar/page';
-import { Description } from './description/page';
+import { Navbar } from './components/navbar';
+import { Description } from './components/description';
 // import { LogoImageSmall, LogoImageLarge, LogoName } from './components/Logo'
 // import { ChevronDown } from './components/Icons'
 
