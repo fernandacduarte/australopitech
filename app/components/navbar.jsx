@@ -11,7 +11,7 @@ const LogoImageSmall = () => {
       alt="Australopitech Logo"
       width={49}
       height={43}
-      priority
+      className={styles.logoImageSmall}
     />
   )
 }

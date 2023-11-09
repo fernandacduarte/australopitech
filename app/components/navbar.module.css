@@ -29,12 +29,31 @@
 
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
+
+  @media (max-width: 375px) {
+    gap: 6px;
+  }
 }
 
 .logoNavbarVisible {
-  opacity: 0.6;
+  opacity: 0.5;
+}
+
+.logoImageSmall {
+  width: 100%;
+  height: auto;
+  max-width: 49px;
+  @media (max-width: 375px) {
+    max-width: 35px;
+    height: auto;
+  }
 }
 
 .logoNameSmall {
+  width: 100%;
+  height: auto;
   max-width: 175px;
+  @media (max-width: 375px) {
+    max-width: 130px;
+  }
 }
