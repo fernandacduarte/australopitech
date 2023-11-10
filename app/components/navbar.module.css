@@ -2,13 +2,13 @@
   position: sticky;
   position: -webkit-sticky;
   top: env(safe-area-inset-top);
-  /* top: env(safe-area-inset-top);  */
+  /* top: 0px;  */
   z-index: 3;
 }
 
 .navbarContainer {
-  /* width: 100%;
-  height: 84px; */
+  width: 100%;
+  height: clamp(4rem, 3.6429rem + 1.7857vw, 5.25rem);
   display: flex;
   justify-content: space-between;
   align-items: center;

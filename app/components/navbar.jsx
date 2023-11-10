@@ -70,7 +70,8 @@ export const Navbar = () => {
   return (
     // <div className={`${styles.navbar} ${showLogo ? styles.navbarScrolledDown  : ''}`}>
     <div className={styles.navbar}>
-      <div className={`${styles.navbarContainer} ${showLogo ? styles.navbarContainerScrolledDown  : ''}`}>
+      {/* <div className={`${styles.navbarContainer} ${showLogo ? styles.navbarContainerScrolledDown  : ''}`}> */}
+      <div className={styles.navbarContainer}>
         <div className={`${styles.logoNavbar} ${showLogo ? styles.logoNavbarVisible  : ''}`}>
           <LogoImageSmall />
           <LogoNameSmall />
