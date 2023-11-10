@@ -78,7 +78,7 @@ const ChevronDown = () => {
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       <Navbar />
 
       <div className={styles.body}>
@@ -116,6 +116,6 @@ export default function Home() {
           
         </div>
       </div>
-    </main>
+    </div>
   )
 }
