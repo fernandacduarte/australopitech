@@ -68,14 +68,16 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className={styles.navbar}>
-      <div className={`${styles.logoNavbar} ${showLogo ? styles.logoNavbarVisible  : ''}`}>
-        <LogoImageSmall />
-        <LogoNameSmall />
+    <div className={styles.navbar}>
+      <div className={styles.navbarContainer}>
+        <div className={`${styles.logoNavbar} ${showLogo ? styles.logoNavbarVisible  : ''}`}>
+          <LogoImageSmall />
+          <LogoNameSmall />
+        </div>
+        <div className="menu-icon-container">
+          <MenuBar />
+        </div>
       </div>
-      <div className="menu-icon-container">
-        <MenuBar />
-      </div>
-    </nav>
+    </div>
   )
 }
