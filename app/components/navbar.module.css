@@ -7,7 +7,7 @@
   padding: 20px 24px;
   background: var(--background-dark); /* Replace with your preferred navbar background color */
   position: sticky;
-  top: 0;
+  /* top: 0; */
   z-index: 1000; /* Ensure it's above other items */
 
   background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
