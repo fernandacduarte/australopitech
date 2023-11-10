@@ -4,11 +4,11 @@
   top: env(safe-area-inset-top);
   /* top: 0px;  */
   z-index: 3;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 100%;
-  min-height: 74px;
+  max-width: 100%; */
+  /* min-height: 74px; */
 }
 
 .navbarContainer {
