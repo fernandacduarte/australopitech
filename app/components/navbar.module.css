@@ -1,14 +1,16 @@
 .navbar {
   position: sticky;
   position: -webkit-sticky;
-  top: env(safe-area-inset-top);
+  top: 0;
+  z-index: 10;
+
   /* top: 0px;  */
-  z-index: 3;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 100%; */
-  /* min-height: 74px; */
+  max-width: 100%;
+  min-height: 74px;
+  box-shadow: 0 1px 0 0 hsla(0,0%,100%,.1);
 }
 
 .navbarContainer {
