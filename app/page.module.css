@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: env(safe-area-inset-top);
+  padding-top: 84px;
   /* display: flex;
   flex-direction: column;
   justify-content: space-between;

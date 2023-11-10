@@ -1,12 +1,13 @@
 .navbar {
   width: 100%;
   height: 84px;
+  margin-bottom: 84px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 24px;
   background: var(--background-dark); /* Replace with your preferred navbar background color */
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 3;
 
