@@ -8,7 +8,7 @@
 
 .navbarContainer {
   width: 100%;
-  height: clamp(4rem, 3.6429rem + 1.7857vw, 5.25rem);
+  height: clamp(4.625rem, 4.4464rem + 0.8929vw, 5.25rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
