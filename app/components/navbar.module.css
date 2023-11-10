@@ -1,7 +1,7 @@
 .navbar {
   position: sticky;
   position: -webkit-sticky;
-  top: 0px;
+  top: env(safe-area-inset-top);
   /* top: env(safe-area-inset-top);  */
   z-index: 3;
 }
