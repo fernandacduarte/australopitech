@@ -48,6 +48,10 @@ export const Navbar = () => {
 
   const [showLogo, setShowLogo] = useState(false);
 
+  const [windowWidth, setWindowWidth] = useState(null);
+
+
+
   // This function will be called on scroll to handle the logo appearance
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -63,6 +67,16 @@ export const Navbar = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
+    const updateWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Set the initial width
+    updateWidth();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', updateWidth);
+
     // Cleanup the event listener when the component unmounts
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -77,6 +91,7 @@ export const Navbar = () => {
           <LogoNameSmall />
         </div>
         <div className="menu-icon-container">
+        {/* <p className={styles.test}>Current window width: {windowWidth}px</p> */}
           <MenuBar />
         </div>
       </div>

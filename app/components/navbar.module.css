@@ -43,10 +43,6 @@
 
   transition: opacity 0.3s ease-in-out;
   opacity: 0;
-
-  @media (max-width: 375px) {
-    gap: 6px;
-  }
 }
 
 .logoNavbarVisible {
@@ -57,17 +53,25 @@
   width: 100%;
   height: auto;
   max-width: 49px;
-  @media (max-width: 375px) {
-    max-width: 35px;
-    height: auto;
-  }
 }
 
 .logoNameSmall {
   width: 100%;
   height: auto;
   max-width: 175px;
-  @media (max-width: 375px) {
+}
+
+@media screen and (max-width: 375px) {
+  .logoNameSmall {
     max-width: 130px;
+  }
+
+  .logoImageSmall {
+    max-width: 35px;
+    height: auto;
+  }
+
+  .logoNavbar {
+    gap: 6px;
   }
 }
