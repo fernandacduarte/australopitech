@@ -69,6 +69,19 @@ const ChevronDown = () => {
   )
 }
 
+const ArrowDown = () => {
+  return (
+    <Image
+      src="/arrow-down.svg"
+      alt="Arrow down"
+      width={42}
+      height={26}
+      className={styles.arrowDownIcon} 
+      priority
+    />
+  )
+}
+
 // --------- END HEADER COMPONENTS --------- //
 
 // --------- BEGIN DESCRIPTION COMPONENTS --------- //
@@ -89,7 +102,8 @@ export default function Home() {
           <div className={styles.headerSubtitle}>
             Shaping the Digital Frontier
           </div>
-          <ChevronDown/>
+          {/* <ChevronDown/> */}
+          <ArrowDown />
         </div>
 
         {/* <div class={styles.gradientBorderContainer}>

@@ -5,6 +5,8 @@
   align-items: center;
   /* gap: clamp(3.375rem, 0.4412rem + 6.1765vw, 6rem); */
   gap: clamp(2.25rem, 0.3214rem + 9.6429vw, 9rem);
+  gap: clamp(3rem, 1.2857rem + 8.5714vw, 9rem);
+  /* gap: clamp(3.5rem, 0.6429rem + 14.2857vw, 13.5rem); */
   /* gap: clamp(3.375rem, 0.9107rem + 12.3214vw, 12rem); */
 }
 
@@ -39,11 +41,12 @@
   width: auto;
   font-size: 48px;
   color: var(--text-01);
-  font-family: var(--font-agrandir);
+  /* font-family: var(--font-agrandir); */
+  font-family: var(--font-montserrat);
   text-align: center;
 }
 
-.solutionsContainer {
+.sectionContainer {
   width: 100%;
   height: auto;
   max-width: var(--max-container-width);
@@ -53,7 +56,7 @@
   gap: clamp(1.125rem, 0.5893rem + 2.6786vw, 3rem);
 }
 
-.solutionsTitle {
+.sectionTitle {
   font-family: var(--font-agrandir-grand-bold);
   color: var(--text-01);
   /* font-size: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem); */
@@ -80,15 +83,10 @@
   gap: clamp(0.3125rem, -0.0268rem + 1.6964vw, 1.5rem);
 
   background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
-              linear-gradient(to bottom, #2FC2C5, #905F9B) border-box;
+              linear-gradient(30deg, #2FC2C5, #905F9B) border-box;
+              /* linear-gradient(120deg, #905F9B, #2FC2C5) border-box; */
   border: 3px solid transparent;
   border-radius: 25px;
-}
-
-.catchyPhrase {
-  width: 100%;
-  height: 275px;
-  background-color: pink;;
 }
 
 .solutionsIcons {
@@ -98,24 +96,294 @@
   height: auto;
   max-width: 57.5px;
   max-height: 53px;
+  opacity: 0.8;
 }
 
 .solutionText {
-  font-family: var(--font-agrandir-grand-light);
+  /* font-family: var(--font-agrandir-grand-light); */
+  /* font-family: var(--font-agrandir); */
+  font-family: var(--font-montserrat);
   color: var(--text-01);
   /* font-size: 24px; -- 
   font-size: 48px; */
   /* font-size: clamp(1.0rem, -0.6773rem + 2.5581vw, 3rem); */
   font-size: clamp(1rem, -0.0118rem + 1.8824vw, 3rem);
+  letter-spacing: 2px;
+}
+
+.catchyPhraseContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px clamp(0rem, -3.6429rem + 18.2143vw, 12.75rem) 0px clamp(0rem, -5.8036rem + 29.0179vw, 20.3125rem); 
+}
+
+.catchyPhraseBorderBox {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(to bottom,  #2FC2C5, #C2C16E) border-box;
+  border: 3px solid transparent;
+  border-radius: 0px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+
+
+  padding: 16px 0px 16px 36px;
+}
+
+.catchyPhraseText {
+  color: var(--text-01); 
+  /* font-family: var(--font-agrandir); */
+  font-size: clamp(1.75rem, 1.4643rem + 1.4286vw, 2.75rem);
+
+  font-family: var(--font-montserrat);
+}
+
+.catchyPhraseHighlightWords {
+  background: linear-gradient(to right,  #2FC2C5, #C2C16E);
+  color: transparent;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prizesCardGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.prizeCard {
+  width: 32%;
+  height: 100%;
+  padding: clamp(1.125rem, 0.5893rem + 2.6786vw, 3rem) clamp(0.875rem, 0.4821rem + 1.9643vw, 2.25rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(120deg, #CAC997, #CA8097) border-box;
+  /* background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(120deg, #2FC2C5, #CA8097) border-box; */
+  border: 3px solid transparent;
+  border-radius: 25px;
+  position: relative;
+}
+
+.prizeText {
+  font-family: var(--font-montserrat);
+  color: var(--text-01);
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: clamp(1.125rem, 0.1765rem + 1.7647vw, 3rem);
+}
+
+.prizesIconContainer {
+  position: absolute;
+  bottom: clamp(0.625rem, -0.9135rem + 2.4038vw, 1.25rem);
+  right: clamp(1.25rem, -0.2885rem + 2.4038vw, 1.875rem);
+}
+
+.prizesIcon {
+  opacity: 0.7;
+  width: clamp(2.25rem, 1.8706rem + 0.7059vw, 3rem);
+  height: auto;
+}
+
+.ourTeamCardGrid {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 56px;
+}
+
+.ourTeamCard {
+  /* width: 32%;
+  height: 100%; */
+  /* padding: clamp(1.125rem, 0.5893rem + 2.6786vw, 3rem) clamp(0.875rem, 0.4821rem + 1.9643vw, 2.25rem); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+  padding-bottom: 0px;
+}
+
+.ourTeamPicture {
+}
+
+.ourTeamDescriptionContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 18px; */
+  gap: 18px;
+}
+
+.ourTeamDescriptionName {
+  /* font-family: var(--font-agrandir-grand-bold); */
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  color: var(--text-01);
+  letter-spacing: 1.5px;
+  line-height: 110%;
+  text-align: center;
+
+  /* font-size: clamp(1.75rem, 1.6071rem + 0.7143vw, 2.25rem); */
+  /* font-size: clamp(1.5rem, 0.3879rem + 2.069vw, 2.25rem); */
+  font-size: clamp(1.5rem, 0.7586rem + 1.3793vw, 2rem);
+  
+  /* font-size: 48px; */
+  /* font-size: 56px; */
+}
+
+/* .ourTeamDescriptionRoleShort {
+  font-family: var(--font-montserrat);
+  color: var(--text-01);
+  text-align: center;
+  font-size: clamp(1.125rem, 0.1765rem + 1.7647vw, 3rem);
+  margin-top: 20px;
+} */
+
+.ourTeamDescriptionRole {
+  font-family: var(--font-montserrat);
+  /* color: var(--text-01); */
+  color: #ADADAD;
+  text-align: center;
+  /* font-size: clamp(1.125rem, 0.1765rem + 1.7647vw, 3rem); */
+  font-size: clamp(1rem, 0.7857rem + 1.0714vw, 1.75rem);
+  font-size: clamp(1.125rem, 0.1983rem + 1.7241vw, 1.75rem);
+  font-size: clamp(1.125rem, 0.7543rem + 0.6897vw, 1.375rem);
+}
+
+.ourTeamDescriptionIcons {
+  width: 100%;
+  /* padding: 0px 36px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 36px;
+  /* gap: 42px; */
+
+  margin-top: 18px;
+  /* padding: 0px clamp(0.875rem, 7.2212rem + -7.0513vw, 2.25rem); */
+}
+
+.githubIcon {
+  width: 38px;
+  width: 34px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* .githubIcon:hover {
+  color: #FFFFFF;
+} */
+
+.xIcon {
+  width: 32px;
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* .xIcon:hover {
+  color: #FFFFFF;
+} */
+
+.linkedinIcon {
+  width: 30px;
+  width: 26px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* .linkedinIcon:hover {
+  color: #FFFFFF;
+} */
+
+.gmailIcon {
+  width: 28px;
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* .gmailIcon:hover {
+  color: #FFFFFF;
+} */
+
+.newHiddenLine {
+  visibility: hidden;
 }
 
 @media (max-width: 1059px) {
   .introductionText {
     font-size: clamp(1.125rem, 0.6379rem + 2.4357vw, 2.25rem);
   }
+
+  .catchyPhraseText {
+    font-size: clamp(1.125rem, 0.6379rem + 2.4357vw, 2.25rem);
+  }
+}
+
+@media (max-width: 1127px) {
+  .ourTeamPicture {
+    width: 200px;
+    height: auto;
+  }
 }
 
 @media (max-width: 859px) {
+  .ourTeamCardGrid {
+    justify-content: space-around;
+  }
+
+  .prizesCardGrid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: clamp(1.6875rem, 0.8839rem + 4.0179vw, 4.5rem);
+  }
+
+  .prizeCard {
+    width: 100%;
+  }
+
+  .prizeText {
+    font-size: clamp(1.375rem, 0.8555rem + 2.5974vw, 2.25rem);
+  }
+
+  .prizesIconContainer {
+    bottom: clamp(0.3125rem, 0.127rem + 0.9276vw, 0.625rem);
+    right: clamp(0.625rem, 0.2539rem + 1.8553vw, 1.25rem);
+  }
+
+  .prizesIcon {
+    width: clamp(2.25rem, 1.8047rem + 2.2263vw, 3rem);
+    height: auto;
+  }
+
   .solutionText {
     font-size: clamp(1.25rem, 0.0979rem + 3.3333vw, 1.875rem);
   }
@@ -130,16 +398,59 @@
   }
 }
 
+@media (max-width: 649px) {
+  .ourTeamCardGrid {
+    justify-content: center;
+    gap: 56px;
+  }
+
+  .ourTeamCard {
+    padding-bottom: 28px;
+    background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(120deg, rgba(48, 195, 197, 0.6), rgba(212, 135, 159, 0.6)) border-box;
+    border: 1.5px solid transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+  }
+}
+
 @media (max-width: 501px) {
+  .prizeCard {
+    border-width: 2px;
+    background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(120deg, rgba(202, 201, 151, 0.8), rgba(202, 128, 151, 0.8)) border-box;
+  }
+
+  .catchyPhraseContainer {
+    padding: 0px;
+  }
+
+  .catchyPhraseBorderBox {
+    background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+                linear-gradient(to bottom,  rgba(36,146, 148, 0.8), rgba(194, 193, 110, 0.8)) border-box;
+    padding: 16px 0px 0px 36px;
+    border: 2px solid transparent;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+
+  .catchyPhraseText {
+    font-family: var(--font-montserrat);
+    font-size: clamp(1.75rem, 0.9765rem + 3.8674vw, 2.1875rem);
+  }
+
   .descriptionContainer {
-    gap: 72px;
+    gap: 110px;
   }
 
   .solutionText {
-    font-size: 28px;
-    font-size: 22px;
     font-size: clamp(1.375rem, 0.712rem + 3.3149vw, 1.75rem);
     text-align: center;
+
+    font-family: var(--font-montserrat);
+    letter-spacing: 0px;
   }
 
   .solutionsIcons {
@@ -153,23 +464,40 @@
   .solutionsCard {
     width: 100%;
     align-items: center;
+    border-width: 2px;
+    background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+                linear-gradient(120deg, #249294, #905F9B) border-box;
   }
 
-  .solutionsTitleMobile {
+  .sectionTitleMobile {
     display: none;
   }
 
-  .solutionsTitle {
+  .sectionTitle {
     letter-spacing: 0px;
     font-size: clamp(1.875rem, -0.0035rem + 9.3923vw, 2.9375rem);
     margin-bottom: clamp(0.9375rem, -0.7906rem + 5vw, 1.875rem);
   }
 
   .introductionText {
-    font-family: var(--font-agrandir-grand-light);
+    /* font-family: var(--font-agrandir-grand-light); */
+    font-family: var(--font-montserrat);
     letter-spacing: 2px;
-    text-align: left;
-    font-size: clamp(1.125rem, -0.201rem + 6.6298vw, 1.875rem);
+    /* text-align: left; */
+    /* font-size: clamp(1.125rem, -0.201rem + 6.6298vw, 1.875rem); */
+    font-size: clamp(1.75rem, 0.9765rem + 3.8674vw, 2.1875rem);
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .introductionBoxBorder {
+    /* padding: 0px; */
+    /* border: transparent; */
+    border-width: 2px;
+  }
+
+  .introductionContainer {
+    /* margin-top: 144px; */
   }
 }
 

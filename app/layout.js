@@ -1,17 +1,29 @@
 import localFont from 'next/font/local'
 import './globals.css'
 
-import { Inter, Roboto_Mono } from 'next/font/google'
+// import { Inter, Roboto_Mono } from 'next/font/google'
+import { Inter, Roboto_Mono, Montserrat } from 'next/font/google'
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-})
+// const inter = Inter({
+//   subsets: ['latin'],
+//   variable: '--font-inter',
+//   display: 'swap',
+// })
 
-const roboto_mono = Roboto_Mono({
+// const roboto_mono = Roboto_Mono({
+//   subsets: ['latin'],
+//   variable: '--font-roboto-mono',
+//   display: 'swap',
+// })
+
+const montserrat = Montserrat({
+  // subsets: ['latin'],
+  // variable: '--font-montserrat',
+  // display: 'swap',
+  weight: ['400', '600', '700'],
+  style: ['normal'],
   subsets: ['latin'],
-  variable: '--font-roboto-mono',
+  variable: '--font-montserrat',
   display: 'swap',
 })
 
@@ -47,7 +59,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable} ${roboto_mono.variable} ${agrandir.variable} ${agrandirWide.variable} ${agrandirGrandLight.variable} ${agrandirGrandHeavy.variable}`}>
+    <html lang="en" className={`${montserrat.variable} ${agrandir.variable} ${agrandirWide.variable} ${agrandirGrandLight.variable} ${agrandirGrandHeavy.variable}`}>
       <body>{children}</body>
     </html>
   )

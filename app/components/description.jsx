@@ -35,7 +35,7 @@ const DappsDevelopmentIcon = () => {
   )
 }
 
-const Web3Integration = () => {
+const Web3IntegrationIcon = () => {
   return (
     <Image
       src="/web3-integration-icon.svg"
@@ -49,7 +49,7 @@ const Web3Integration = () => {
   )
 }
 
-const BlockchainConsulting = () => {
+const BlockchainConsultingIcon = () => {
   return (
     <Image
       src="/blockchain-consulting-icon.svg"
@@ -62,6 +62,111 @@ const BlockchainConsulting = () => {
     />
   )
 }
+
+const ArrowDiagonalIcon = () => {
+  return (
+    <Image
+      src="/arrow-diagonal.svg"
+      alt="Arrow with link"
+      width={56.694}
+      height={56.492}
+      className={styles.prizesIcon}
+      priority
+    />
+  )
+}
+
+const PictureTeam1 = () => {
+  return (
+    <Image
+      src="/team1.png"
+      alt="Team member: Bernardo Franceschin"
+      width={289}
+      height={289}
+      className={styles.ourTeamPicture}
+      priority
+    />
+  )
+}
+
+const PictureTeam2 = () => {
+  return (
+    <Image
+      src="/team2.png"
+      alt="Team member: Fernanda Duarte"
+      width={289}
+      height={289}
+      className={styles.ourTeamPicture}
+      priority
+    />
+  )
+}
+
+const PictureTeam3 = () => {
+  return (
+    <Image
+      src="/team3.png"
+      alt="Team member: Pedro Franceschin"
+      width={289}
+      height={289}
+      className={styles.ourTeamPicture}
+      priority
+    />
+  )
+}
+
+const GithubIcon = () => {
+  return (
+    <Image
+      src="/github-icon.svg"
+      alt="Link to Github profile"
+      width={42}
+      height={42}
+      className={styles.githubIcon}
+      priority
+    />
+  )
+}
+
+const XIcon = () => {
+  return (
+    <Image
+      src="/x-icon.svg"
+      alt="Link to X profile"
+      width={37}
+      height={34}
+      className={styles.xIcon}
+      priority
+    />
+  )
+}
+
+const LinkedinIcon = () => {
+  return (
+    <Image
+      src="/linkedin-icon.svg"
+      alt="Link to Linkedin profile"
+      width={34}
+      height={33}
+      className={styles.linkedinIcon}
+      priority
+    />
+  )
+}
+
+const GmailIcon = () => {
+  return (
+    <Image
+      src="/gmail-icon.svg"
+      alt="Click to copy the gmail address"
+      width={32}
+      height={32}
+      className={styles.gmailIcon}
+      priority
+    />
+  )
+}
+
 
 export const Description = () => {
   // const headersList = headers()
@@ -78,9 +183,9 @@ export const Description = () => {
         </div>
       </div>
 
-      <div className={styles.solutionsContainer}>
-        <h1 className={styles.solutionsTitle}>
-          Our solutions <span className={styles.solutionsTitleMobile}>involve</span>
+      <div className={styles.sectionContainer}>
+        <h1 className={styles.sectionTitle}>
+          Our solutions <span className={styles.sectionTitleMobile}>involve</span>
         </h1>
         <div className={styles.solutionsCardGrid}>
           <div className={styles.solutionsCard}>
@@ -98,13 +203,13 @@ export const Description = () => {
             </span>
           </div>
           <div className={styles.solutionsCard}>
-            <Web3Integration />
+            <Web3IntegrationIcon />
             <span className={styles.solutionText}>
               Web3<br />Integrations
             </span>
           </div>
           <div className={styles.solutionsCard}>
-            <BlockchainConsulting />
+            <BlockchainConsultingIcon />
             <span className={styles.solutionText}>
               Blockchain<br />Consulting
             </span>
@@ -112,11 +217,124 @@ export const Description = () => {
         </div>
       </div>
 
-      <div className={styles.catchyPhrase}>
-        <div className={styles.decorationLine}>
+      <div className={styles.catchyPhraseContainer}>
+        <div className={styles.catchyPhraseBorderBox}>
+          <p className={styles.catchyPhraseText}>
+          From smart contracts to decentralized applications, we transform brilliant ideas 
+          into <span className={styles.catchyPhraseHighlightWords}>functional Web3 Applications</span>.
+          </p>
         </div>
-        <p className={styles.catchyPhraseText}>
-        </p>
+      </div>
+
+      <div className={styles.sectionContainer}>
+        <h1 className={styles.sectionTitle}>
+          Prizes and Grants
+        </h1>
+        <div className={styles.prizesCardGrid}>
+          <div className={styles.prizeCard}>
+            <span className={styles.prizeText}>
+              {/* Metaverse <br /> Hackathon <br /> Finalist */}
+              Metaverse <br /> Hackathon <br /> Finalist
+            </span>
+            <div className={styles.prizesIconContainer}>
+              <ArrowDiagonalIcon />
+            </div>
+          </div>
+          <div className={styles.prizeCard}>
+            <span className={styles.prizeText}>
+              ETHSamba <br /> Hack <br /> Rio23
+            </span>
+            <div className={styles.prizesIconContainer}>
+              <ArrowDiagonalIcon />
+            </div>
+          </div>
+          <div className={styles.prizeCard}>
+            <span className={styles.prizeText}>
+              Coinbase <br />  Based Accounts <br /> Grant
+            </span>
+            <div className={styles.prizesIconContainer}>
+              <ArrowDiagonalIcon />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div className={styles.sectionContainer}>
+        <h1 className={styles.sectionTitle}>
+          Our team
+        </h1>
+        <div className={styles.ourTeamCardGrid}>
+          <div className={styles.ourTeamCard}>
+            <div className={styles.ourTeamPicture}>
+              <PictureTeam1 />
+            </div>
+            <div className={styles.ourTeamDescriptionContainer}>
+              <span className={styles.ourTeamDescriptionName}>
+                Bernardo <br />Franceschin
+              </span>
+              <span className={styles.ourTeamDescriptionRole}>
+                Full-stack Developer <br /> 
+                {/* <span className={styles.newHiddenLine}>new line</span> */}
+              </span >
+              <span className={styles.ourTeamDescriptionIcons}>
+                <GithubIcon />
+                <XIcon />
+                <LinkedinIcon />
+                <GmailIcon />
+              </span>
+            </div>
+          </div>
+
+          <div className={styles.ourTeamCard}>
+            <div className={styles.ourTeamPicture}>
+              <PictureTeam3 />
+            </div>
+            <div className={styles.ourTeamDescriptionContainer}>
+              <span className={styles.ourTeamDescriptionName}>
+                Pedro <br />Franceschin
+              </span>
+              <span className={styles.ourTeamDescriptionRole}>
+                Full-stack Developer <br />
+                {/* <span className={styles.newHiddenLine}>new line</span> */}
+              </span >
+              <span className={styles.ourTeamDescriptionIcons}>
+                <GithubIcon />
+                <XIcon />
+                <LinkedinIcon />
+                <GmailIcon />
+              </span>
+            </div>
+          </div>
+
+          <div className={styles.ourTeamCard}>
+            <div className={styles.ourTeamPicture}>
+              <PictureTeam2 />
+            </div>
+            <div className={styles.ourTeamDescriptionContainer}>
+            <span className={styles.ourTeamDescriptionName}>
+                Fernanda <br />Duarte
+              </span>
+              <span className={styles.ourTeamDescriptionRole}>
+                Front-end developer <br />and UI Designer
+              </span >
+              <span className={styles.ourTeamDescriptionIcons}>
+                <GithubIcon />
+                <XIcon />
+                <LinkedinIcon />
+                <GmailIcon />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.introductionContainer}>
+        <div className={styles.introductionBoxBorder}>
+          <div className={styles.introductionText}>
+            We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
+          </div>
+        </div>
       </div>
 
     </div>
