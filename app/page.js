@@ -27,7 +27,7 @@ const LogoImageLarge = () => {
 const LogoNameLarge = () => {
   return (
     <Image
-      src="/logo-name-large.svg"
+      src="/logo-name-large2.svg"
       alt="Australopitech Name"
       width={1094.154}
       height={97.152}
@@ -94,7 +94,7 @@ export default function Home() {
     <div className={styles.main}>
       <Navbar />
 
-      <div className={styles.body}>
+      <div className={styles.bodyContent}>
         <div className={styles.header}>
           <LogoImageLarge />
           <LogoNameLarge />

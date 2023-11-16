@@ -167,6 +167,45 @@ const GmailIcon = () => {
   )
 }
 
+const CopyIcon = () => {
+  return (
+    <Image
+      src="/copy-icon.svg"
+      alt="Copy company email address"
+      width={36.5}
+      height={42.5}
+      className={styles.contactCopyIcon}
+      priority
+    />
+  )
+}
+
+const EmailIcon = () => {
+  return (
+    <Image
+      src="/email-icon.svg"
+      alt="Copy company email address"
+      width={63}
+      height={49.5}
+      className={styles.contactEmailIcon}
+      priority
+    />
+  )
+}
+
+const CopyIconMobile = () => {
+  return (
+    <Image
+      src="/copy-icon-mobile.svg"
+      alt="Copy company email address"
+      width={36.5}
+      height={42.5}
+      className={styles.contactCopyIconMobile}
+      priority
+    />
+  )
+}
+
 
 export const Description = () => {
   // const headersList = headers()
@@ -178,6 +217,7 @@ export const Description = () => {
       <div className={styles.introductionContainer}>
         <div className={styles.introductionBoxBorder}>
           <div className={styles.introductionText}>
+            {/* We are a tech company that creates amazing <span className={styles.introductionHighlightWords}>web3 products</span> and promotes consulting for <span className={styles.introductionHighlightWords}>web3 aspirants</span>. */}
             We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
           </div>
         </div>
@@ -288,7 +328,7 @@ export const Description = () => {
 
           <div className={styles.ourTeamCard}>
             <div className={styles.ourTeamPicture}>
-              <PictureTeam3 />
+              <PictureTeam2 />
             </div>
             <div className={styles.ourTeamDescriptionContainer}>
               <span className={styles.ourTeamDescriptionName}>
@@ -309,7 +349,7 @@ export const Description = () => {
 
           <div className={styles.ourTeamCard}>
             <div className={styles.ourTeamPicture}>
-              <PictureTeam2 />
+              <PictureTeam3 />
             </div>
             <div className={styles.ourTeamDescriptionContainer}>
             <span className={styles.ourTeamDescriptionName}>
@@ -329,14 +369,28 @@ export const Description = () => {
         </div>
       </div>
 
-      <div className={styles.introductionContainer}>
-        <div className={styles.introductionBoxBorder}>
-          <div className={styles.introductionText}>
-            We are a tech company that creates amazing web3 products and promotes consulting for web3 aspirants.
+      <div className={styles.contactContainer}>
+        <div className={styles.contactTitle}>
+          Contact us!
+        </div>
+        {/* <EmailIcon /> */}
+        <div className={styles.contactEmailContainer}>
+          <div className={styles.contactEmail}>
+            australopitech@proton.me
+          </div>
+          <div className={styles.contactCopyIconContainer}>
+            <div className={styles.contactCopyIconBox}>
+              {/* <span className={styles.contactCopyText}>copy</span> */}
+              <CopyIcon />
+            </div>
+            <CopyIconMobile />
           </div>
         </div>
       </div>
 
+      <div className={styles.footer}>
+        © {new Date().getFullYear()} All rights reserved.
+      </div>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 .main {
-  /* min-height: 100vh;
-  position: relative; */
+  min-height: 100vh;
+  position: relative;
   /* max-height: 100%; */
   /* min-height: 100vh; */
   /* height: 100%;
@@ -8,16 +8,29 @@
   /* position: relative; */
   /* overflow-x: hidden; */
 
-  display: block;
+  /* display: block;
   position: fixed;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   max-height: 100%;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   overflow-x: hidden;
+  overflow-y: auto; */
+
+
+  /* display: block;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto; */
 
   /* padding-top: 84px; */
   /* display: flex;
@@ -29,15 +42,17 @@
   /* padding-top: 84px; */
 }
 
-.body {
+.bodyContent {
   /* padding: 0px 32px; */
   padding: 0 clamp(1.125rem, -0.2679rem + 6.9643vw, 6rem);
+  overflow-y: auto;
+  height: 100%;
 }
 
 .header {
   width: 100%;
   /* height: 100vh; */
-  padding: 24px 0px 16px 0px;
+  padding: 24px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +62,9 @@
 
 .headerSubtitle {
   font-family: var(--font-agrandir-grand-bold);
-  color: var(--text-03);
+  /* color: var(--text-03); */
+  color: #958d98;
+  color: rgba(177, 175, 178, 0.5);
   font-size: clamp(0.5rem, 0.1211rem + 1.8945vw, 1.375rem);
   letter-spacing: 3.08px;
 }

@@ -39,6 +39,7 @@ const MenuBar = () => {
       alt="Chevron down"
       width={48}
       height={48}
+      className={styles.menuBarIcon}
       priority
     />
   )
@@ -48,36 +49,26 @@ export const Navbar = () => {
 
   const [showLogo, setShowLogo] = useState(false);
 
-  const [windowWidth, setWindowWidth] = useState(null);
-
-
-
-  // This function will be called on scroll to handle the logo appearance
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-    const showOnHeight = 100; 
-
-    if (currentScrollY > showOnHeight) {
-      setShowLogo(true);
-    } else {
-      setShowLogo(false);
-    }
-  };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    // This function will be called on scroll to handle the logo appearance
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const showOnHeight = 20; 
 
-    const updateWidth = () => {
-      setWindowWidth(window.innerWidth);
+      console.log("********* currentScrollY: ", currentScrollY)
+
+      if (currentScrollY > showOnHeight) {
+        setShowLogo(true);
+      } else {
+        setShowLogo(false);
+      }
     };
 
-    // Set the initial width
-    updateWidth();
+    window.addEventListener('scroll', handleScroll);
 
-    // Add event listener for window resize
-    window.addEventListener('resize', updateWidth);
+    console.log("********* window.scrollY: ", window.scrollY)
 
-    // Cleanup the event listener when the component unmounts
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

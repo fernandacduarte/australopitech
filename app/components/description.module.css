@@ -6,6 +6,7 @@
   /* gap: clamp(3.375rem, 0.4412rem + 6.1765vw, 6rem); */
   gap: clamp(2.25rem, 0.3214rem + 9.6429vw, 9rem);
   gap: clamp(3rem, 1.2857rem + 8.5714vw, 9rem);
+  gap: clamp(3rem, 0.6429rem + 11.7857vw, 11.25rem);
   /* gap: clamp(3.5rem, 0.6429rem + 14.2857vw, 13.5rem); */
   /* gap: clamp(3.375rem, 0.9107rem + 12.3214vw, 12rem); */
 }
@@ -46,6 +47,16 @@
   text-align: center;
 }
 
+.introductionHighlightWords {
+  font-weight: 600;
+  /* background: linear-gradient(to right,  #BD77CE, #53BCBE);
+  color: transparent;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
 .sectionContainer {
   width: 100%;
   height: auto;
@@ -83,7 +94,7 @@
   gap: clamp(0.3125rem, -0.0268rem + 1.6964vw, 1.5rem);
 
   background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
-              linear-gradient(30deg, #2FC2C5, #905F9B) border-box;
+              linear-gradient(160deg, #2FC2C5, #905F9B) border-box;
               /* linear-gradient(120deg, #905F9B, #2FC2C5) border-box; */
   border: 3px solid transparent;
   border-radius: 25px;
@@ -103,6 +114,7 @@
   /* font-family: var(--font-agrandir-grand-light); */
   /* font-family: var(--font-agrandir); */
   font-family: var(--font-montserrat);
+  font-weight: 500;
   color: var(--text-01);
   /* font-size: 24px; -- 
   font-size: 48px; */
@@ -124,7 +136,7 @@
   width: 100%;
   height: auto;
   background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
-              linear-gradient(to bottom,  #2FC2C5, #C2C16E) border-box;
+              linear-gradient(to bottom,  #2FC2C5, #905F9B) border-box;
   border: 3px solid transparent;
   border-radius: 0px;
   border-top: 0;
@@ -144,7 +156,7 @@
 }
 
 .catchyPhraseHighlightWords {
-  background: linear-gradient(to right,  #2FC2C5, #C2C16E);
+  background: linear-gradient(to right,  #BD77CE, #53BCBE);
   color: transparent;
   background-clip: text;
 
@@ -169,7 +181,8 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
-              linear-gradient(120deg, #CAC997, #CA8097) border-box;
+              /* linear-gradient(120deg, #CAC997, #CA8097) border-box; */
+              linear-gradient(200deg, #2FC2C5, #905F9B) border-box;
   /* background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
               linear-gradient(120deg, #2FC2C5, #CA8097) border-box; */
   border: 3px solid transparent;
@@ -179,8 +192,9 @@
 
 .prizeText {
   font-family: var(--font-montserrat);
+  font-weight: 500;
   color: var(--text-01);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   font-size: clamp(1.125rem, 0.1765rem + 1.7647vw, 3rem);
 }
@@ -331,8 +345,123 @@
   color: #FFFFFF;
 } */
 
-.newHiddenLine {
+/* .newHiddenLine {
   visibility: hidden;
+} */
+
+.contactContainer {
+  width: 100%;
+  height: auto; 
+
+  /* margin-top: clamp(3.375rem, 0.4412rem + 6.1765vw, 6rem); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 1.0714rem + 2.1429vw, 3rem);
+
+  margin-top: -30px;
+  padding: clamp(2.25rem, 1.1786rem + 5.3571vw, 5rem) clamp(1.6875rem, 0.8839rem + 4.0179vw, 4.5rem);
+  /* margin-bottom: 36px; */
+
+  /* background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(120deg, #2FC2C5, #905F9B) border-box; */
+  /* background: linear-gradient(120deg, #2FC2C5, #905F9B) border-box; */
+  background: linear-gradient(120deg, #2FC2C5, #905F9B) border-box;
+  border: 5px solid transparent;
+  border-radius: 25px;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactTitle {
+  width: auto;
+  font-size: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
+  letter-spacing: 2px;
+  /* color: var(--text-01); */
+  color: var(--background-dark);
+  /* font-family: var(--font-agrandir); */
+  font-family: var(--font-agrandir-grand-bold);
+  text-align: center;
+}
+
+.contactEmail {
+  width: auto;
+  /* font-size: 64px;
+  font-size: 18px; */
+  font-size: clamp(1.125rem, 0.3036rem + 4.1071vw, 4rem);
+  font-weight: 400;
+  /* color: var(--text-01); */
+  color: var(--background-dark);
+  font-family: var(--font-montserrat);
+  /* font-family: var(--font-agrandir-grand-light); */
+  text-align: center;
+}
+
+.contactCopyIconContainer {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* gap: 8px; */
+  cursor: pointer;
+}
+
+.contactCopyIconBox {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+
+  /* border: 1px solid transparent; 
+  border-color: #57435f;
+  border-radius: 8px;
+  padding: 6px 8px; */
+}
+
+/* .contactCopyText {
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  font-weight: 500;
+  color: #57435f;
+  display: none;
+} */
+
+.contactCopyIcon {
+  width: 18px;
+  height: auto;
+  margin-top: -15px;
+  margin-right: -15px;
+  opacity: 0.7;
+}
+
+.contactEmailIcon {
+  width: 120px;
+  height: auto;
+}
+
+.footer {
+  font-family: var(--font-agrandir);
+  font-size: 16px;
+  color: var(--text-02);
+  margin-bottom: 24px;
+  text-align: center;;
+}
+
+.contactCopyIconMobile {
+  display: none;
+}
+
+@media (max-width: 1127px) {
+  .ourTeamPicture {
+    width: 200px;
+    height: auto;
+  }
 }
 
 @media (max-width: 1059px) {
@@ -345,18 +474,13 @@
   }
 }
 
-@media (max-width: 1127px) {
-  .ourTeamPicture {
-    width: 200px;
-    height: auto;
+@media (max-width: 886px) {
+  .ourTeamCardGrid {
+    justify-content: space-around;
   }
 }
 
 @media (max-width: 859px) {
-  .ourTeamCardGrid {
-    justify-content: space-around;
-  }
-
   .prizesCardGrid {
     display: flex;
     align-items: center;
@@ -407,7 +531,7 @@
   .ourTeamCard {
     padding-bottom: 28px;
     background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
-              linear-gradient(120deg, rgba(48, 195, 197, 0.6), rgba(212, 135, 159, 0.6)) border-box;
+              linear-gradient(120deg, rgba(48, 195, 197, 0.6), rgba(144, 94, 156, 0.6)) border-box;
     border: 1.5px solid transparent;
     border-top: 0;
     border-right: 0;
@@ -416,10 +540,53 @@
 }
 
 @media (max-width: 501px) {
+  .contactEmailIcon {
+    width: 80px;
+    height: auto;
+  }
+
+  .contactCopyIconContainer {
+    justify-content: center;
+  }
+
+  .contactCopyIconBox {
+    border: 0px solid transparent; 
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  .contactCopyText {
+    display: none;
+  }
+
+  .contactCopyIcon {
+    display: none;
+  }
+
+  .contactCopyIconMobile {
+    display: inline;
+    width: 22px;
+    height: auto;
+    /* opacity: 0.9; */
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  .contactEmail {
+    font-weight: 500;
+  }
+
+  .contactTitle {
+    letter-spacing: 0px;
+    font-size: clamp(1.875rem, -0.0035rem + 9.3923vw, 2.9375rem);
+  }
+
   .prizeCard {
     border-width: 2px;
+    /* background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+              linear-gradient(120deg, rgba(202, 201, 151, 0.8), rgba(202, 128, 151, 0.8)) border-box; */
     background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
-              linear-gradient(120deg, rgba(202, 201, 151, 0.8), rgba(202, 128, 151, 0.8)) border-box;
+              linear-gradient(200deg, #2FC2C5, #905F9B) border-box;
   }
 
   .catchyPhraseContainer {
@@ -427,8 +594,8 @@
   }
 
   .catchyPhraseBorderBox {
-    background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
-                linear-gradient(to bottom,  rgba(36,146, 148, 0.8), rgba(194, 193, 110, 0.8)) border-box;
+    /* background: linear-gradient(var(--background-dark), var(--background-dark)) padding-box,
+                linear-gradient(to bottom,  rgba(36,146, 148, 0.8), rgba(194, 193, 110, 0.8)) border-box; */
     padding: 16px 0px 0px 36px;
     border: 2px solid transparent;
     border-top: 0;
