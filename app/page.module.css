@@ -52,7 +52,7 @@
 .header {
   width: 100%;
   /* height: 100vh; */
-  padding: 24px 0px 0px 0px;
+  padding: 42px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,8 +63,8 @@
 .headerSubtitle {
   font-family: var(--font-agrandir-grand-bold);
   /* color: var(--text-03); */
-  color: #958d98;
-  color: rgba(177, 175, 178, 0.5);
+  color: rgba(92, 104, 105, 0.8);
+  /* color: rgba(177, 175, 178, 0.5); */
   font-size: clamp(0.5rem, 0.1211rem + 1.8945vw, 1.375rem);
   letter-spacing: 3.08px;
 }

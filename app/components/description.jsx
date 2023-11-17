@@ -379,10 +379,10 @@ export const Description = () => {
             australopitech@proton.me
           </div>
           <div className={styles.contactCopyIconContainer}>
-            <div className={styles.contactCopyIconBox}>
+            {/* <div className={styles.contactCopyIconBox}> */}
               {/* <span className={styles.contactCopyText}>copy</span> */}
-              <CopyIcon />
-            </div>
+              {/* <CopyIcon /> */}
+            {/* </div> */}
             <CopyIconMobile />
           </div>
         </div>
