@@ -370,10 +370,6 @@
   background: linear-gradient(120deg, #2FC2C5, #905F9B) border-box;
   border: 5px solid transparent;
   border-radius: 25px;
-
-  display:flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .contactTitle {
@@ -398,7 +394,7 @@
   color: var(--background-dark);
   font-family: var(--font-montserrat);
   /* font-family: var(--font-agrandir-grand-light); */
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* .contactCopyIconContainer {
@@ -584,6 +580,7 @@
 
   .contactEmail {
     font-weight: 500;
+    font-size: clamp(0.875rem, -0.0179rem + 4.4643vw, 4rem);
   }
 
   .contactTitle {
