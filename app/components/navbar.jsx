@@ -19,7 +19,7 @@ const LogoImageSmall = () => {
 const LogoNameSmall = () => {
   return (
     <Image
-      src="/logo-name-small-8.svg"
+      src="/logo-name-small-9.svg"
       // src="/logo-image-and-name.svg"
       alt="Australopitech Name"
       width={56}
