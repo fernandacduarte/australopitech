@@ -574,6 +574,12 @@
     margin-right: 0px;
   }
 
+  /* .contactEmailContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
   .contactEmail {
     font-weight: 500;
   }

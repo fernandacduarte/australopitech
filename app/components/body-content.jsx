@@ -1,6 +1,6 @@
 // import { useState, useEffect } from 'react';
 import Image from 'next/image'
-import styles from './description.module.css'
+import styles from './body-content.module.css'
 // import { headers } from 'next/headers'
 
 const isMobileDevice = (userAgent) => {
@@ -207,7 +207,7 @@ const CopyIconMobile = () => {
 }
 
 
-export const Description = () => {
+export const BodyContent = () => {
   // const headersList = headers()
   // const useragent = headersList.get('user-agent')
   // const isMobile = isMobileDevice(useragent)
@@ -374,18 +374,18 @@ export const Description = () => {
           Contact us!
         </div>
         {/* <EmailIcon /> */}
-        <div className={styles.contactEmailContainer}>
-          <div className={styles.contactEmail}>
-            australopitech@proton.me
-          </div>
-          <div className={styles.contactCopyIconContainer}>
-            {/* <div className={styles.contactCopyIconBox}> */}
-              {/* <span className={styles.contactCopyText}>copy</span> */}
-              {/* <CopyIcon /> */}
-            {/* </div> */}
-            <CopyIconMobile />
-          </div>
+        {/* <div className={styles.contactEmailContainer}> */}
+        <div className={styles.contactEmail}>
+          australopitech@proton.me
         </div>
+        <div className={styles.contactCopyIconContainer}>
+          {/* <div className={styles.contactCopyIconBox}> */}
+            {/* <span className={styles.contactCopyText}>copy</span> */}
+            {/* <CopyIcon /> */}
+          {/* </div> */}
+          <CopyIconMobile />
+        </div>
+        {/* </div> */}
       </div>
 
       <div className={styles.footer}>

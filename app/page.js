@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { Navbar } from './components/navbar';
-import { Description } from './components/description';
+import { BodyContent } from './components/body-content';
 // import { LogoImageSmall, LogoImageLarge, LogoName } from './components/Logo'
 // import { ChevronDown } from './components/Icons'
 
@@ -93,7 +93,6 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Navbar />
-
       <div className={styles.bodyContent}>
         <div className={styles.header}>
           <LogoImageLarge />
@@ -102,33 +101,9 @@ export default function Home() {
           <div className={styles.headerSubtitle}>
             Shaping the Digital Frontier
           </div>
-          {/* <ChevronDown/> */}
           <ArrowDown />
         </div>
-
-        {/* <div class={styles.gradientBorderContainer}>
-          blabla
-        </div> */}
-
-        <Description />
-
-        
-
-        <div className={styles.awards}>
-          
-        </div>
-
-        <div className={styles.team}>
-          
-        </div>
-
-        <div className={styles.contact}>
-          
-        </div>
-
-        <div className={styles.footer}>
-          
-        </div>
+        <BodyContent />
       </div>
     </div>
   )
