@@ -378,13 +378,13 @@ export const BodyContent = () => {
         <div className={styles.contactEmail}>
           australopitech@proton.me
         </div>
-        <div className={styles.contactCopyIconContainer}>
+        {/* <div className={styles.contactCopyIconContainer}> */}
           {/* <div className={styles.contactCopyIconBox}> */}
             {/* <span className={styles.contactCopyText}>copy</span> */}
             {/* <CopyIcon /> */}
           {/* </div> */}
-          <CopyIconMobile />
-        </div>
+        <CopyIconMobile />
+        {/* </div> */}
         {/* </div> */}
       </div>
 
