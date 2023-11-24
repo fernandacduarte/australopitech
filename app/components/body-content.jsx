@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import styles from './body-content.module.css'
 // import { headers } from 'next/headers'
+import { ContactEmail } from './contact-email.jsx'
 
 const isMobileDevice = (userAgent) => {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
@@ -193,20 +194,6 @@ const EmailIcon = () => {
   )
 }
 
-const CopyIconMobile = () => {
-  return (
-    <Image
-      src="/copy-icon-mobile.svg"
-      alt="Copy company email address"
-      width={36.5}
-      height={42.5}
-      className={styles.contactCopyIconMobile}
-      priority
-    />
-  )
-}
-
-
 export const BodyContent = () => {
   // const headersList = headers()
   // const useragent = headersList.get('user-agent')
@@ -277,7 +264,9 @@ export const BodyContent = () => {
               Metaverse <br /> Hackathon <br /> Finalist
             </span>
             <div className={styles.prizesIconContainer}>
-              <ArrowDiagonalIcon />
+              <a href="https://x.com/encodeclub/status/1604832247076380672?s=20">
+                <ArrowDiagonalIcon />
+              </a>
             </div>
           </div>
           <div className={styles.prizeCard}>
@@ -285,7 +274,9 @@ export const BodyContent = () => {
               ETHSamba <br /> Hack <br /> Rio23
             </span>
             <div className={styles.prizesIconContainer}>
-              <ArrowDiagonalIcon />
+              <a href="https://taikai.network/ethsamba/hackathons/ethsambahack">
+                <ArrowDiagonalIcon />
+              </a>
             </div>
           </div>
           <div className={styles.prizeCard}>
@@ -293,7 +284,9 @@ export const BodyContent = () => {
               Coinbase <br />  Based Accounts <br /> Grant
             </span>
             <div className={styles.prizesIconContainer}>
-              <ArrowDiagonalIcon />
+              <a href="https://prop.house/base/based-accounts">
+                <ArrowDiagonalIcon />
+              </a>
             </div>
           </div>
           
@@ -314,13 +307,20 @@ export const BodyContent = () => {
                 Bernardo <br />Franceschin
               </span>
               <span className={styles.ourTeamDescriptionRole}>
-                Full-stack Developer <br /> 
+                Full-stack and <br />
+                Smart Contract developer 
                 {/* <span className={styles.newHiddenLine}>new line</span> */}
               </span >
               <span className={styles.ourTeamDescriptionIcons}>
-                <GithubIcon />
-                <XIcon />
-                <LinkedinIcon />
+                <a href="https://github.com/bfranceschin">
+                  <GithubIcon />
+                </a>
+                <a href="https://twitter.com/bfranceschin1">
+                  <XIcon />
+                </a>
+                <a href="https://www.linkedin.com/in/bernardo-bianchi-franceschin-702543234/">
+                  <LinkedinIcon />
+                </a>
                 <GmailIcon />
               </span>
             </div>
@@ -335,13 +335,20 @@ export const BodyContent = () => {
                 Pedro <br />Franceschin
               </span>
               <span className={styles.ourTeamDescriptionRole}>
-                Full-stack Developer <br />
+                Full-stack and <br />
+                Smart Contract developer
                 {/* <span className={styles.newHiddenLine}>new line</span> */}
               </span >
               <span className={styles.ourTeamDescriptionIcons}>
-                <GithubIcon />
-                <XIcon />
-                <LinkedinIcon />
+                <a href="https://github.com/pbfranceschin">
+                  <GithubIcon />
+                </a>
+                <a href="https://twitter.com/pbfranceschin">
+                  <XIcon />
+                </a>
+                <a href="https://www.linkedin.com/in/pedro-franceschin-16278015b/">
+                  <LinkedinIcon />
+                </a>
                 <GmailIcon />
               </span>
             </div>
@@ -356,12 +363,18 @@ export const BodyContent = () => {
                 Fernanda <br />Duarte
               </span>
               <span className={styles.ourTeamDescriptionRole}>
-                Front-end developer <br />and UI Designer
+                Front-end developer <br />and UI designer
               </span >
               <span className={styles.ourTeamDescriptionIcons}>
-                <GithubIcon />
-                <XIcon />
-                <LinkedinIcon />
+                <a href="https://github.com/fernandacduarte">
+                  <GithubIcon />
+                </a>
+                <a href="https://twitter.com/nandawebdev">
+                  <XIcon />
+                </a>
+                <a href="http://www.linkedin.com/in/fernanda-duarte-5363aa214">
+                  <LinkedinIcon />
+                </a>
                 <GmailIcon />
               </span>
             </div>
@@ -373,19 +386,10 @@ export const BodyContent = () => {
         <div className={styles.contactTitle}>
           Contact us!
         </div>
-        {/* <EmailIcon /> */}
-        {/* <div className={styles.contactEmailContainer}> */}
-        <div className={styles.contactEmail}>
+        <ContactEmail />
+        {/* <div className={styles.contactEmail}>
           australopitech@proton.me
-        </div>
-        {/* <div className={styles.contactCopyIconContainer}> */}
-          {/* <div className={styles.contactCopyIconBox}> */}
-            {/* <span className={styles.contactCopyText}>copy</span> */}
-            {/* <CopyIcon /> */}
-          {/* </div> */}
-        <CopyIconMobile />
-        {/* </div> */}
-        {/* </div> */}
+        </div> */}
       </div>
 
       <div className={styles.footer}>

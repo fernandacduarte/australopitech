@@ -1,0 +1,73 @@
+.contactEmail {
+  width: auto;
+  /* font-size: 64px;
+  font-size: 18px; */
+  font-size: clamp(0.875rem, -0.0179rem + 4.4643vw, 4rem);
+  font-weight: 400;
+  /* color: var(--text-01); */
+  color: var(--background-dark);
+  font-family: var(--font-montserrat);
+  /* font-family: var(--font-agrandir-grand-light); */
+  /* text-align: center; */
+  cursor: pointer;
+
+  /* position: relative; */
+}
+
+.contactEmailContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: clamp(1.5rem, 1.0714rem + 2.1429vw, 3rem);
+}
+
+.feedbackMessage {
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px;
+  /* background-color: #4caf50; */
+  font-family: var(--font-montserrat);
+  color: var(--background-dark);
+  border-radius: 4px;
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.2); */
+}
+
+.contactCopyIconMobileContainer {
+  display: none;
+}
+
+.contactCopyIconMobile {
+  display: none;
+}
+
+.hiddenEmailMobile {
+  /* display: none; */
+}
+
+@media (max-width: 501px) {
+  .contactEmail {
+    font-weight: 500;
+    font-size: clamp(0.875rem, -0.0179rem + 4.4643vw, 4rem);
+  }
+
+  .feedbackMessage {
+    display: none;
+  }
+  .contactCopyIconMobileContainer {
+    display: block;
+    cursor: pointer;
+  }
+
+  .contactCopyIconMobile {
+    display: block;
+    width: 22px;
+    height: auto;
+    /* opacity: 0.9; */
+    /* margin-top: 0px;
+    margin-right: 0px; */
+  }
+}
